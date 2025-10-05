@@ -1,0 +1,13 @@
+Options -Indexes
+
+RewriteEngine on
+
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^login$ _pages/_login/index.php [L]
+RewriteRule ^cek-login$ _process/_cek_login.php?action=cek-login [L]
+
+RewriteRule ^dashboard-user$ _pages/_user/index.php [L]
+
+RewriteRule ^dashboard-pic$ _pages/_pic/index.php [L]
